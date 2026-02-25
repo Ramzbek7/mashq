@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <div class="head">
             <h1>SkillFlow</h1>
-            <span>Dashboard</span>
-            <span>Courses</span>
-            <span>Progress</span>
-            <span>Community</span>
-            <div>
+            <nav class="nav">
+                <a href="#">Dashboard</a>
+                <a href="#">Courses</a>
+                <a href="#">Progress</a>
+                <a href="#">Community</a>
+            </nav>
+            <div class="user-info">
                 <p>Akmal</p>
                 <p>IT * Park Level 12</p>
             </div>
@@ -23,18 +25,20 @@
     <main>
         <div class="menu">
             <h3>MAIN MENU</h3>
-            <p>Dashboard</p>
-            <p>My Courses</p>
-            <p>My Progress</p>
-            <p>Favorites</p>
-            <p>Calendar</p>
-            <p>Settings</p>
+            <p class="active">Dashboard</p>
+            <ul>
+                <li>My Courses</li>
+                <li>My Progress</li>
+                <li>Favorites</li>
+                <li>Calendar</li>
+                <li>Settings</li>
+            </ul>
         </div>
         <div class="content">
             <h1>Good morning, Akmal!</h1>
             <p>You have finished 68% of your monthly goals.</p>
         </div>
-        <section>
+        <section class="quick-status">
             <h2>Quick Status</h2>
             <div class="status">
                 <h1>12</h1>
@@ -52,7 +56,25 @@
         <section>
             <h2>My Courses</h2>
             <div>
-              <p>Modern UI/UX Design</p>
+                <div class="course">
+                    <div class="top"></div>
+                    <h3>Modern UI/UX Design</h3>
+                    <p>by Sarah Chen</p>
+                    <p>76% Complete</p>
+                    <a href="#" class="btn">Continue -></a>
+                </div>
+                <div class="python">
+                    <h3>Python for Beginners</h3>
+                    <p>by Mechael Ross</p>
+                    <p>45% Complete</p>
+                    <a href="#" class="btn">Continue -></a>
+                </div>
+                <div class="business">
+                    <h3>Business English</h3>
+                    <p>by Emma Thomson</p>
+                    <p>92% Complete</p>
+                    <a href="#" class="btn">Continue -></a>
+                </div>
             </div>
         </section>
     </main>
